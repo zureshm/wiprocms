@@ -1,0 +1,181 @@
+.plans_wrapper{
+    width:auto; max-width:auto; margin:auto;
+    background:#eee; padding:20px;
+    display:flex; justify-content: space-between;
+    
+}
+
+
+.plans_box{
+    display:flex;
+    width:30%;
+    height:auto;
+    padding:0;
+    text-align: center;
+    flex-direction: column;;
+}
+.plans_box .title{
+    height:50px;
+    width:100%;
+    background:crimson;
+    color:#fff;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: bold;
+
+}
+.plans_box .body{
+    height:auto;
+    min-height: 200px;
+    background:#fff;
+    color:#333;
+    font-size: 18px;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.plans_box .body hr{width:90%; margin: 10px auto;}
+.plans_box .footer{
+    height:50px;
+    background:#ccc;
+    color:#333;
+    padding:10px 0;
+
+}
+.plans_box .footer input[type="radio"]{
+     width:30px; height: 30px;
+}
+/*popup realted*/
+.popup_wrapper{
+    width:100%; height:100vh; position:fixed;
+    z-index: 9;    
+    left:0; top: 0;
+}
+
+.dark_overlay{
+    width:100%; height:100vh; position:fixed;
+    background:rgba(122,122,122,0.5);
+    z-index: 2;
+    left:0; top: 0;
+}
+
+.popup_window{
+    width:auto; height:auto; position:fixed;
+    min-width: 300px;
+    background-color: red;
+    display: flex; flex-direction: column;
+    z-index: 3;
+    left:50%; top: 50%;
+    transform: translate(-50%, -200px);
+    box-shadow: 0 0 15px 2px rgba(0,0,0,0.9);
+}
+.popup_window .title{
+    width:100%; height:40px; line-height: 20px;
+    color:#fff; background-color: #333;
+    text-align: center; display: flex;
+    padding:10px 20px; text-align:center;
+}
+.popup_window .body{
+    width:100%; height:auto; min-height: 100px;
+    color:#333; background-color: #fff;
+    text-align: center;  padding:20px;
+    display: flex;
+}
+.popup_window .footer{
+    width:100%; height:70px; 
+    padding:15px; display: flex; justify-content: space-around;
+    background-color: #fff;
+    border-bottom: 5px solid #333;
+}
+ .btns{
+    width:auto; height:40px; background-color: #333; color:#ccc;
+    border:0; display: block; line-height: 40px; padding:0 20px;
+    border-radius: 5px; min-width:100px; text-align: center;   
+    cursor: pointer;
+}
+
+/*popup related ends*/
+
+.subscribe_form{
+    width:100%;
+    max-width: 800px;
+    height:auto;
+    background:#eee;
+    margin-top: 20px;
+    padding:20px;
+}
+.form_row{
+    display:flex;
+    justify-content: space-between;
+}
+label.label_style1{padding:5px 0 0px; display: block;  height: 40px; width:200px}
+
+/*nothing*/
+.welcome_cover{
+    display:flex;
+    justify-content: space-around;
+}
+.welcome_cover h1{font-size: 32px; margin-bottom: 15px;}
+.welcome_cover h3{font-size: 20px;margin-bottom: 15px;}
+.welcome_cover .left{
+    text-align: left; width:50%;
+
+}
+.welcome_cover .right{
+    text-align: right; width:50%;
+    
+}
+.welcome_txt{text-transform: capitalize;}
+span.emo{display:inline-block; font-size: .7em; width:1.5em; height:1.5em; background-color: gold;
+    text-align: center; padding-left: .05em;  line-height: 1.3em; border-radius: 10em; transform: rotate(90deg);
+position: relative; top:-3px}
+
+/*course accordian styles*/
+
+.course_wrapper{
+    width:100%;  height: auto;
+    display:flex; 
+    flex-direction: column;
+    
+}
+
+
+.course_block{width:100%; height:auto;  border-bottom: 5px solid #eee;}
+.course_block .course_title{
+    height:40px; background-color: #333; color:#ccc;
+    padding:10px; font-size: 20px; line-height: 20px;
+    cursor: pointer;
+}
+.course_block .course_details{
+    height:0; max-height: 0;   background-color: #fff; color:#333;
+    display: block;  
+    transition:max-height 1.5s; overflow: hidden;
+}
+
+.course_block .course_details.show{display: block;  height:auto; max-height: 1000px;}
+
+.course_block .course_details .contents{padding:10px; font-size: 14px; line-height: 20px; }
+
+
+.all_courses_title h3{font-size: 20px;margin-bottom: 15px;} h3{font-size: 20px;margin-bottom: 15px;}
+
+.all_courses_container{width:100%; height:auto; padding:20px; background-color: #eee;
+display: flex; flex-wrap: wrap; justify-content: space-between;}
+.course_card{
+    height:auto; min-height:100px; background: #fff; padding:10px;
+    border:1px solid #999; 
+    flex-basis: 32%; margin:.5%;
+    position: relative;
+}
+.course_card input[type="checkbox"]{width:25px; height: 25px; position: absolute; right:10px; top:10px}
+.all_courses_footer{
+    height:auto; padding:20px; display: flex;
+    justify-content: space-between;
+}
+.all_courses_footer .cell{
+    display: flex;
+    flex-direction: column;
+}
